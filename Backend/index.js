@@ -3,16 +3,16 @@
   
  const app = express()
  
-//  const db = mysql.createConnection({
-//     host:"localhost"
-//     user:"root"
-//     password:""
-//     database:"test"
-//  });
+ const db = mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"",
+    database:"test"
+ });
 
-//  app.get("/", (req,res) =>{
-//     res.json("hello this is backend")
-//  });
+ app.get("/", (req,res) =>{
+    res.json("hello this is backend")
+ });
 
  app.listen(5000, ()=>{
 
